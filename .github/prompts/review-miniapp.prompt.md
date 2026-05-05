@@ -1,7 +1,7 @@
 ---
 name: review-miniapp
 description: "Use when: reviewing app/ for demo readiness."
-agent: ask
+agent: miniapp-reviewer
 argument-hint: "app/ の変更内容をレビューしてください"
 ---
 
