@@ -1,7 +1,7 @@
 ---
 name: implement-from-plan
 description: "Use when: implementing an approved plan under app/."
-agent: agent
+agent: miniapp-builder
 argument-hint: "承認済みの実装計画"
 ---
 
