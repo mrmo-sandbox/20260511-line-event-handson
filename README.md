@@ -1,14 +1,14 @@
 # LINEミニアプリ × Agentic Development ハンズオン
 
-このリポジトリは、LINEミニアプリを題材に **GitHub Copilot Agent modeでWebアプリをゼロから実装する** ハンズオン用のハーネスです。
+このリポジトリは、LINEミニアプリを題材に **GitHub Copilot ChatでWebアプリをゼロから実装する** ハンズオン用のハーネスです。
 
-アプリ本体の雛形は含めません。参加者はチームでアイデアをまとめ、`work/idea.md` とUIスケッチ画像をGitHub Copilotに渡し、VS CodeのPlan modeとAgent modeで `app/` 配下にWebアプリを生成します。
+アプリ本体の雛形は含めません。参加者はチームでアイデアをまとめ、`work/idea.md` とUIスケッチ画像をGitHub Copilotに渡し、VS CodeのCopilot Chatで `app/` 配下にWebアプリを生成します。
 
 ## このハンズオンでやること
 
 参加者が最初からコードを書くのではなく、チームで作ったアイデアをGitHub Copilotが実装しやすい形に整えます。
 
-`work/idea.md` とUIスケッチ画像を **アイデア引き継ぎパッケージ** として作り、Plan modeで実装計画に変換し、Agent modeで `app/` 配下にWebアプリを生成します。
+`work/idea.md` とUIスケッチ画像を **アイデア引き継ぎパッケージ** として作り、専用プロンプトで実装計画とアプリ生成を進めます。
 
 ## 当日のゴール
 

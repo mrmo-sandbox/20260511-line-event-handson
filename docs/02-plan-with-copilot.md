@@ -1,4 +1,4 @@
-# 02. Plan modeで実装計画に変換する
+# 02. Copilotで実装計画に変換する
 
 `work/idea.md` とUIスケッチ画像を、GitHub Copilotに実装計画へ変換してもらいます。
 
@@ -7,9 +7,8 @@
 1. `work/idea.md` を保存します。
 2. UIスケッチ画像を `work/` に置きます。
 3. VS Code Copilot Chatを開きます。
-4. Plan modeを選びます。
-5. 必要に応じて、UIスケッチ画像をChatへドラッグ＆ドロップして添付します。
-6. 次のプロンプトを実行します。
+4. 必要に応じて、UIスケッチ画像をChatへドラッグ＆ドロップして添付します。
+5. 次のプロンプトを実行します。
 
 ```text
 /plan-from-idea
@@ -18,7 +17,7 @@
 必要に応じて、追加でこう伝えます。
 
 ```text
-work/idea.md と work/ui-sketch.png を見て、70分ハンズオンで実装できるサイズに落とし込んでください。
+work/idea.md と work/ui-sketch.png を見て、必要最低限でシンプルな実装計画にしてください。
 まだ実装はせず、まず計画だけ作ってください。
 ```
 
