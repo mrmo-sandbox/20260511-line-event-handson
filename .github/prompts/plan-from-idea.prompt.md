@@ -1,7 +1,7 @@
 ---
 name: plan-from-idea
 description: "Use when: planning from work/idea.md and UI sketches before implementation."
-agent: plan
+agent: miniapp-planner
 argument-hint: "work/idea.md と UI画像"
 ---
 
