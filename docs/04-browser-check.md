@@ -15,8 +15,8 @@ cd app
 npm run dev
 ```
 
-2. 表示されたURLをブラウザで開きます。
-3. VS Code内蔵ブラウザまたはPlaywright MCPが使える場合は、Copilotに画面確認を依頼します。
+2. Codespacesの場合は、Portsパネルの5173番を開き、VS Code内ブラウザまたはポートプレビューで確認します。
+3. Playwright MCPが使える場合は、Copilotにも画面確認を依頼します。
 
 ```text
 /improve-with-browser

@@ -5,18 +5,25 @@
 ## 必要なもの
 
 - GitHubアカウント
-- GitHub Copilotが使えるVS Code環境
-- Node.js v23.6.0以降
-- Git
-- このリポジトリのForkまたはClone
+- GitHub Copilotが使えるVS CodeまたはCodespaces環境
+- このリポジトリのFork
+
+ローカルVS Codeで進める場合は、追加でNode.js 22 LTS以降とGitを用意します。
+
+## 推奨: Codespacesで開く
+
+1. GitHub上でこのリポジトリをForkします。
+2. Forkしたリポジトリで **Code** → **Codespaces** → **Create codespace** を選びます。
+3. Codespacesが開いたら、GitHub Copilotにサインインしていることを確認します。
+4. 推奨拡張機能が表示されたらインストールします。
+5. MCPサーバーのTrust確認が出た場合は、Playwrightだけ許可します。
 
 ## VS Codeで確認すること
 
-1. リポジトリのルートフォルダをVS Codeで開きます。
+1. CodespacesまたはローカルVS Codeでリポジトリのルートフォルダを開きます。
 2. GitHub Copilotにサインインしていることを確認します。
 3. Copilot Chatでこのリポジトリのプロンプトを実行できることを確認します。
-4. 推奨拡張機能が表示されたらインストールします。
-5. MCPサーバーのTrust確認が出た場合は、内容を確認して必要なものだけ許可します。
+4. VS Code内ブラウザまたはPortsパネルを使えることを確認します。
 
 ## Node.js確認
 
@@ -27,11 +34,13 @@ node --version
 npm --version
 ```
 
-Node.jsが古い場合は、セッションやパネルディスカッションの間にアップデートしてください。
+CodespacesではdevcontainerがNode.jsを用意します。ローカルVS CodeでNode.jsが古い場合は、セッションやパネルディスカッションの間にアップデートしてください。
 
 ## 無料プラン・制限がある場合
 
-無料プランや組織ポリシーによって、使えるAgent機能や回数に制限がある場合があります。その場合は、チーム内で使える人のVS Codeを中心に進めるか、1チーム1アプリの形で進めてください。
+無料プランや組織ポリシーによって、CodespacesやAgent機能に制限がある場合があります。その場合は、ローカルVS Codeに切り替えるか、チーム内で使える人の環境を中心に進めてください。
+
+ハンズオン後は、不要なCodespaceを停止または削除してください。
 
 ## この時点でアプリが無いのは正常です
 

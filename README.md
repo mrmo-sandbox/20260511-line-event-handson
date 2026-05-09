@@ -28,13 +28,13 @@
 
 ## 使い方
 
-1. このリポジトリをForkまたはCloneします。
-2. VS Codeでリポジトリのルートを開きます。
+1. このリポジトリをForkします。
+2. GitHub Codespacesを作成します。ローカルVS Codeでも実施できます。
 3. [docs/00-setup.md](docs/00-setup.md) に沿って環境を確認します。
 4. [work/idea.md](work/idea.md) をチームのアイデアで埋め、UIスケッチ画像を `work/` に置きます。
 5. Copilot Chatで `/plan-from-idea` を実行し、必要最低限でシンプルな実装計画を作ります。
 6. 計画に納得したら `/implement-from-plan` を実行し、`app/` 配下に実装します。
-7. `/improve-with-browser` でブラウザ確認と改善ループを回します。
+7. VS Code内ブラウザまたは `/improve-with-browser` で確認と改善ループを回します。
 8. 余裕があれば `/review-miniapp` でデモ前レビューを行います。
 
 ## リポジトリ構成
@@ -46,6 +46,8 @@
   instructions/
   prompts/
   skills/
+.devcontainer/
+  devcontainer.json
 .vscode/
   extensions.json
   mcp.json
