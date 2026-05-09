@@ -14,13 +14,13 @@
 
 最低成功ラインは、GitHub Copilotが `app/` 配下にWebアプリを生成し、ローカルで起動できることです。
 
-標準成功ラインは、VS Code内蔵ブラウザまたはPlaywright MCPで画面を確認し、1回以上Copilotに改善指示を出すことです。
+標準成功ラインは、VS Code内ブラウザで画面を確認し、1回以上Copilotに改善指示を出すことです。Playwright MCPは使える場合の補助にします。
 
 ## 全体の流れ
 
 | タイミング | 内容 | 主な成果物 |
 |---|---|---|
-| 冒頭 | 環境確認 | VS Code / Copilot / Node.js / MCP |
+| 冒頭 | 環境確認 | Codespaces / VS Code / Copilot / Node.js |
 | パネル前30分 | チームでアイデア出し | `work/idea.md`, UIスケッチ |
 | パネル中 | VS Code Agentに実装を任せる | `app/` |
 | ハンズオン本編 | ブラウザ確認・改善 | 修正済みアプリ |
@@ -34,7 +34,7 @@
 4. [work/idea.md](work/idea.md) をチームのアイデアで埋め、UIスケッチ画像を `work/` に置きます。
 5. Copilot Chatで `/plan-from-idea` を実行し、必要最低限でシンプルな実装計画を作ります。
 6. 計画に納得したら `/implement-from-plan` を実行し、`app/` 配下に実装します。
-7. VS Code内ブラウザまたは `/improve-with-browser` で確認と改善ループを回します。
+7. VS Code内ブラウザで画面を確認し、`/improve-with-browser` で改善ループを回します。
 8. 余裕があれば `/review-miniapp` でデモ前レビューを行います。
 
 ## リポジトリ構成

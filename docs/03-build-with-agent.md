@@ -22,7 +22,7 @@ npm run build
 npm run dev
 ```
 
-`npm run dev` で表示されたローカルURLを、VS Code内蔵ブラウザまたは通常のブラウザで開きます。
+`npm run dev` で表示されたURLを、VS Code内ブラウザで開きます。CodespacesではPortsパネルから5173番を開くのが分かりやすいです。
 
 ## 詰まったときの追加指示
 

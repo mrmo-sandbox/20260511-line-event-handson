@@ -16,14 +16,14 @@
 2. Forkしたリポジトリで **Code** → **Codespaces** → **Create codespace** を選びます。
 3. Codespacesが開いたら、GitHub Copilotにサインインしていることを確認します。
 4. 推奨拡張機能が表示されたらインストールします。
-5. MCPサーバーのTrust確認が出た場合は、Playwrightだけ許可します。
+5. MCPサーバーのTrust確認が出た場合は、必要になったときだけPlaywrightを許可します。
 
 ## VS Codeで確認すること
 
 1. CodespacesまたはローカルVS Codeでリポジトリのルートフォルダを開きます。
 2. GitHub Copilotにサインインしていることを確認します。
 3. Copilot Chatでこのリポジトリのプロンプトを実行できることを確認します。
-4. VS Code内ブラウザまたはPortsパネルを使えることを確認します。
+4. VS Code内ブラウザとPortsパネルを使えることを確認します。
 
 ## Node.js確認
 

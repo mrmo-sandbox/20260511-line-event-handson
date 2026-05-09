@@ -16,7 +16,7 @@ npm run dev
 ```
 
 2. Codespacesの場合は、Portsパネルの5173番を開き、VS Code内ブラウザまたはポートプレビューで確認します。
-3. Playwright MCPが使える場合は、Copilotにも画面確認を依頼します。
+3. VS Code内ブラウザを見ながら、Copilotに画面確認と改善を依頼します。Playwright MCPは使える場合の補助にします。
 
 ```text
 /improve-with-browser
