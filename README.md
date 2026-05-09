@@ -61,6 +61,14 @@ work/
   idea.md
 ```
 
+## フロントエンド向けSkills
+
+`github/awesome-copilot` から、今回のハンズオンに合うものを選び、短い日本語版として `.github/skills/` に置いています。
+
+- `/web-coder` — React + TypeScript、CSS、アクセシビリティ、レスポンシブ実装の補助
+- `/web-design-reviewer` — 画面の見た目、スマートフォン幅、空状態、エラー状態の確認
+- `/webapp-testing` — Playwrightやブラウザ操作による主要フローの動作確認
+
 ## 生成されるアプリの前提
 
 Copilotには、原則として以下の条件で実装してもらいます。
