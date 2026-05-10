@@ -4,7 +4,7 @@
 
 ## 手順
 
-1. 直前の計画を参照できる状態で、Awesome由来の実装Skillを使います。
+1. `/plan-from-idea` で作った計画を参照できる状態で、Awesome由来の実装Skillを使います。
 
 ```text
 /web-coder

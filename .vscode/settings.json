@@ -1,3 +1,4 @@
 {
+  "chat.promptFilesRecommendations": true,
   "chat.mcp.autoStart": false
 }

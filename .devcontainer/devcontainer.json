@@ -17,6 +17,7 @@
         "ms-playwright.playwright"
       ],
       "settings": {
+        "chat.promptFilesRecommendations": true,
         "chat.mcp.autoStart": false
       }
     }
