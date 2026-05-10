@@ -12,7 +12,7 @@
 
 Forkが終わったら、自分のForkのリポジトリ画面を開き、以下のどちらかを選びます。
 
-下のCodespaces / VS Code Webボタンは、元リポジトリをすぐ確認するためのショートカットです。自分のForkで作業する場合は、Fork後のリポジトリ画面で同じ操作をしてください。
+下のCodespaces / ローカルVS Codeボタンは、元リポジトリをすぐ開くためのショートカットです。自分のForkで作業する場合は、Fork後のリポジトリでCodespacesを作るか、Forkのclone URLをローカルVS Codeで開いてください。
 
 ### 推奨: Codespacesで開く
 
@@ -22,11 +22,11 @@ Forkが終わったら、自分のForkのリポジトリ画面を開き、以下
 
 Codespacesは、Node.jsや推奨拡張機能がそろった状態で始めやすいので、このハンズオンの推奨環境です。
 
-### 代替: VS Code Webで見る
+### 代替: ローカルVS Codeで開く
 
-[![Open in VS Code Web](https://img.shields.io/badge/Open%20in-VS%20Code%20Web-007ACC?logo=visualstudiocode&logoColor=white)](https://vscode.dev/github/mrmo-sandbox/20260511-line-event-handson)
+[![Open in VS Code](https://img.shields.io/badge/Open%20in-VS%20Code-007ACC?logo=visualstudiocode&logoColor=white)](vscode://vscode.git/clone?url=https://github.com/mrmo-sandbox/20260511-line-event-handson.git)
 
-VS Code Webは、リポジトリや資料をすぐ見る用途に便利です。ターミナルで `npm install` や `npm run dev` まで実行する場合は、CodespacesまたはローカルVS Codeを使ってください。
+上のボタンは、ローカルのVS Codeを起動してこの元リポジトリをcloneするショートカットです。自分のForkで作業する場合は、ForkのURLを使ってVS Codeの **Git: Clone** を実行してください。
 
 ## 必要なもの
 
@@ -38,30 +38,11 @@ VS Code Webは、リポジトリや資料をすぐ見る用途に便利です。
 
 ## Codespacesで確認すること
 
-Codespacesでは、devcontainerがGitHub Copilot CLIを自動インストールし、CLI用のMCP設定を `~/.copilot/mcp-config.json` に配置します。VS Code Agent用の `.vscode/mcp.json` とは別設定です。
-
 1. Codespacesが開いたら、GitHub Copilotにサインインしていることを確認します。
 2. 推奨拡張機能が表示されたらインストールします。
-3. ターミナルで `copilot version` を実行し、GitHub Copilot CLIが使えることを確認します。
-4. Copilot CLIを開く場合は `copilot` を実行し、CLI内で `/mcp show` を実行すると `playwright` の設定を確認できます。
-5. MCPサーバーのTrust確認が出た場合は、必要になったときだけPlaywrightを許可します。
+3. MCPサーバーのTrust確認が出た場合は、必要になったときだけPlaywrightを許可します。
 
 既に作成済みのCodespaceでは、devcontainerの再ビルドが必要になる場合があります。
-
-## VS Codeで確認すること
-
-1. CodespacesまたはローカルVS Codeでリポジトリのルートフォルダを開きます。
-2. GitHub Copilotにサインインしていることを確認します。
-3. Copilot ChatでこのリポジトリのSkillsを実行できることを確認します。
-4. VS Code内ブラウザとPortsパネルを使えることを確認します。
-
-ローカルVS CodeでGitHub Copilot CLIも使う場合は、ターミナルで以下を実行します。
-
-```bash
-npm install -g @github/copilot
-mkdir -p ~/.copilot
-cp .github/copilot-cli-mcp.json ~/.copilot/mcp-config.json
-```
 
 ## Node.js確認
 
