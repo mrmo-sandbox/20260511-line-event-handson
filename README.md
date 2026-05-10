@@ -88,7 +88,7 @@ Copilotには、原則として以下の条件で実装してもらいます。
 
 - `app/` 配下にアプリを新規作成する
 - Vite + React + TypeScriptを基本構成にする
-- LINE LIFFはモック優先で扱い、実LIFF接続は任意の発展課題にする
+- LINEプロフィールはモック優先で扱い、LINEミニアプリチャネル作成、開発用LIFF ID、エンドポイントURL設定は任意の発展課題にする
 - `npm install`, `npm run dev`, `npm run build` が動く状態にする
 - スマートフォン幅で使いやすいUIにする
 - ブラウザ確認を行い、見つかった問題をCopilotに修正させる
