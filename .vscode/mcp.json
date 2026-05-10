@@ -1,12 +1,15 @@
 {
   "servers": {
-    "github": {
-      "type": "http",
-      "url": "https://api.githubcopilot.com/mcp"
-    },
     "playwright": {
+      "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@microsoft/mcp-server-playwright"]
+      "args": [
+        "-y",
+        "@playwright/mcp@latest",
+        "--headless",
+        "--viewport-size=390x844",
+        "--isolated"
+      ]
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "name": "LINE Mini App Hands-on",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Vite dev server",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.vscode-pull-request-github",
+        "ms-playwright.playwright"
+      ],
+      "settings": {
+        "chat.promptFilesRecommendations": true,
+        "chat.mcp.autoStart": false
+      }
+    }
+  }
+}
