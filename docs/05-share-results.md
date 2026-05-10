@@ -40,13 +40,10 @@ LINEミニアプリチャネルを使う場合も、LIFF IDやチャネル情報
 
 ---
 
-<table>
-  <tr>
-    <td align="left" width="50%">
-      <a href="04-browser-check.md"><kbd>← 戻る: 04. ブラウザで確認して改善する</kbd></a>
-    </td>
-    <td align="right" width="50%">
-      <a href="../README.md"><kbd>完了: READMEへ戻る →</kbd></a>
-    </td>
-  </tr>
-</table>
+<p align="left">
+  <a href="04-browser-check.md">← 戻る: 04. ブラウザで確認して改善する</a>
+</p>
+
+<p align="right">
+  <a href="../README.md">完了: READMEへ戻る →</a>
+</p>
