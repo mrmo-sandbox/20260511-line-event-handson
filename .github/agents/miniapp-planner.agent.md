@@ -5,11 +5,11 @@ tools: [read, edit, search]
 handoffs:
   - label: 実装を開始する
     agent: agent
-    prompt: "work/plan.md を読んで、/web-coder を使って app/ 配下に実装してください。"
+    prompt: "work/plan.md を読んで、可能であればAutopilotで進めてください。/web-coder を使い、app/ 配下に必要最低限のWebアプリを実装してください。Autopilotに切り替えられない場合も、同じ実装方針で進めてください。"
     send: true
   - label: plan.mdを修正する
     agent: agent
-    prompt: "#createFile the plan as is into an untitled file (`untitled:plan-${camelCaseName}.prompt.md` without frontmatter) for further refinement."
+    prompt: "#createFile the current contents of work/plan.md as is into an untitled markdown file (`untitled:plan-${camelCaseName}.md` without frontmatter) for further refinement. Tell the user to copy the refined content back to work/plan.md when done."
     send: true
     showContinueOn: false
 ---
