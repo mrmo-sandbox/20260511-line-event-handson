@@ -79,7 +79,7 @@ work/
 
 ideaから実装計画へ変換する部分は、Plan modeに近い対話的な絞り込みが必要なのでcustom agentを用意しています。
 
-- `miniapp-planner` — `work/idea.md` とUIスケッチ、必要に応じてシーン画像を、小さな実装計画に変換
+- `miniapp-planner` — `work/idea.md` とUIスケッチ、必要に応じてシーン画像を、小さな実装計画へ変換し、`work/plan.md` に保存
 
 実装以降は、`github/awesome-copilot` から今回のハンズオンに合うSkillsを選び、短い日本語版として `.github/skills/` に置いています。
 

@@ -15,12 +15,12 @@
 
 ## 実装を依頼する
 
-02で作った計画をChat上で見える状態にして、Awesome由来の実装Skillを使います。
+02で作った `work/plan.md` をChat上で見える状態にして、Awesome由来の実装Skillを使います。
 
 ```text
 /web-coder
 
-work/idea.md、UIスケッチ、必要に応じてシーン画像、直前の実装計画に沿って、app/ 配下に必要最低限のWebアプリを実装してください。
+work/idea.md、work/plan.md、UIスケッチ、必要に応じてシーン画像に沿って、app/ 配下に必要最低限のWebアプリを実装してください。
 Vite + React + TypeScript、モバイルファーストでお願いします。
 まず通常のWebアプリとして主要フローを動かし、その後にLIFF MockプロフィールでLINEらしさを足してください。
 LIFF MockはUIに直書きせず、将来LINEミニアプリチャネルの開発用LIFF IDで初期化するLIFF SDKへ差し替えやすい薄い境界にしてください。
