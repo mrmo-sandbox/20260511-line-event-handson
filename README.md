@@ -4,6 +4,14 @@
 
 アプリ本体の雛形は含めません。参加者はチームでアイデアとシーンスケッチをまとめ、`work/idea.md` と画像をGitHub Copilotに渡し、VS CodeのCopilot Chatで `app/` 配下にWebアプリを生成します。
 
+## すぐ開く
+
+[![Fork this repository](https://img.shields.io/badge/Fork-this%20repository-24292F?logo=github&logoColor=white)](https://github.com/mrmo-sandbox/20260511-line-event-handson/fork)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mrmo-sandbox/20260511-line-event-handson?quickstart=1)
+[![Open in VS Code Web](https://img.shields.io/badge/Open%20in-VS%20Code%20Web-007ACC?logo=visualstudiocode&logoColor=white)](https://vscode.dev/github/mrmo-sandbox/20260511-line-event-handson)
+
+Markdown内にGitHub標準のForkボタンそのものは置けませんが、上のようなバッジリンクは置けます。編集して進める場合は、まずForkしてから自分のForkでCodespacesを作るのがおすすめです。
+
 ## このハンズオンでやること
 
 参加者が最初からコードを書くのではなく、チームで作ったアイデアをGitHub Copilotが実装しやすい形に整えます。
@@ -29,7 +37,7 @@
 ## 使い方
 
 1. このリポジトリをForkします。
-2. GitHub Codespacesを作成します。ローカルVS Codeでも実施できます。
+2. ForkしたリポジトリでGitHub Codespacesを作成します。ローカルVS Codeでも実施できます。
 3. [docs/00-setup.md](docs/00-setup.md) に沿って環境を確認します。
 4. シーンスケッチ画像を `work/` に置きます。
 5. `idea-capture-coach` Agentで、選んだアイデアとシーンを [work/idea.md](work/idea.md) に整理します。

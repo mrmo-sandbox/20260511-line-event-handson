@@ -2,6 +2,16 @@
 
 このハンズオンでは、アプリ本体を事前に用意しません。VS CodeのGitHub Copilot Chatで、アイデアからWebアプリをゼロから生成します。
 
+## まず開く
+
+[![Fork this repository](https://img.shields.io/badge/Fork-this%20repository-24292F?logo=github&logoColor=white)](https://github.com/mrmo-sandbox/20260511-line-event-handson/fork)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mrmo-sandbox/20260511-line-event-handson?quickstart=1)
+[![Open in VS Code Web](https://img.shields.io/badge/Open%20in-VS%20Code%20Web-007ACC?logo=visualstudiocode&logoColor=white)](https://vscode.dev/github/mrmo-sandbox/20260511-line-event-handson)
+
+ハンズオンで編集する場合は、まずForkしてください。Codespacesボタンはこのリポジトリをすぐ開くための入口です。自分のForkで作業する場合は、Fork後のリポジトリ画面で **Code** → **Codespaces** → **Create codespace** を選びます。
+
+VS Code Webは、リポジトリや資料をすぐ見る用途に便利です。ターミナルやローカル実行まで使う場合は、CodespacesまたはローカルVS Codeを使ってください。
+
 ## 必要なもの
 
 - GitHubアカウント
