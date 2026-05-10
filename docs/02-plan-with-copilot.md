@@ -27,12 +27,12 @@
 VS CodeでCopilot Chatを開き、Agentを `miniapp-planner` に切り替えます。
 
 ```text
-work/idea.md、UIスケッチ、必要に応じてシーン画像をもとに、ハンズオン中に実装できる小さな計画を作り、work/plan.md に保存してください。
+work/idea.md、UIスケッチ、必要に応じてシーン画像をもとに、ハンズオン中に実装できる小さな計画を作り、work/plan.md を更新してください。
 ```
 
 UIスケッチ画像やシーン画像をChatに添付できる場合は、添付してから実行します。添付できない場合は、`work/idea.md` の「UIスケッチ」や「追加コンテキスト: 役に立っているシーン」に内容を短く追記してから実行してください。
 
-`miniapp-planner` は、Plan modeに近い形で「`work/idea.md` とUIスケッチ、必要に応じたシーン画像をハンズオン向けの小さな実装計画へ変換し、`work/plan.md` に保存する」ためのcustom agentです。`idea-capture-coach` が聞き取った内容を、ここで実装可能な計画へ絞ります。
+`miniapp-planner` は、Plan modeに近い形で「`work/idea.md` とUIスケッチ、必要に応じたシーン画像をハンズオン向けの小さな実装計画へ変換し、`work/plan.md` に保存する」ためのcustom agentです。`work/plan.md` は最初から用意されているので、`idea-capture-coach` が聞き取った内容をもとに、このファイルを更新します。
 
 ## `miniapp-planner` の出力を見るポイント
 

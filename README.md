@@ -66,6 +66,7 @@ docs/
   05-share-results.md
 work/
   idea.md
+  plan.md
   ui-sketch.png
   scene-1.jpg  # 任意
   scene-2.jpg  # 任意
