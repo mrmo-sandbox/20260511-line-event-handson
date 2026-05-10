@@ -2,13 +2,13 @@
 
 このリポジトリは、LINEミニアプリを題材に **GitHub Copilot ChatでWebアプリをゼロから実装する** ハンズオン用のハーネスです。
 
-アプリ本体の雛形は含めません。参加者はチームでアイデアをまとめ、`work/idea.md` とUIスケッチ画像をGitHub Copilotに渡し、VS CodeのCopilot Chatで `app/` 配下にWebアプリを生成します。
+アプリ本体の雛形は含めません。参加者はチームでアイデアとシーンスケッチをまとめ、`work/idea.md` と画像をGitHub Copilotに渡し、VS CodeのCopilot Chatで `app/` 配下にWebアプリを生成します。
 
 ## このハンズオンでやること
 
 参加者が最初からコードを書くのではなく、チームで作ったアイデアをGitHub Copilotが実装しやすい形に整えます。
 
-`work/idea.md` とUIスケッチ画像を **アイデア引き継ぎパッケージ** として作り、Awesome Copilot由来のフロントエンド向けSkillsでアプリ生成と改善を進めます。
+`work/idea.md` とシーンスケッチ画像を **アイデア引き継ぎパッケージ** として作り、Awesome Copilot由来のフロントエンド向けSkillsでアプリ生成と改善を進めます。
 
 ## 当日のゴール
 
@@ -21,7 +21,7 @@
 | タイミング | 内容 | 主な成果物 |
 |---|---|---|
 | 冒頭 | 環境確認 | Codespaces / VS Code / Copilot / Node.js |
-| パネル前30分 | チームでアイデア出し | `work/idea.md`, UIスケッチ |
+| パネル前30分 | チームでアイデア出し | `work/idea.md`, シーンスケッチ |
 | パネル中 | Copilot Chatに実装を任せる | `app/` |
 | ハンズオン本編 | ブラウザ確認・改善 | 修正済みアプリ |
 | 最後 | 成果共有 | チーム発表 |
@@ -31,8 +31,8 @@
 1. このリポジトリをForkします。
 2. GitHub Codespacesを作成します。ローカルVS Codeでも実施できます。
 3. [docs/00-setup.md](docs/00-setup.md) に沿って環境を確認します。
-4. [work/idea.md](work/idea.md) をチームのアイデアで埋め、UIスケッチ画像を `work/` に置きます。
-5. `/plan-from-idea` で `work/idea.md` とUIスケッチから必要最低限の実装計画を作ります。
+4. [work/idea.md](work/idea.md) をチームのアイデアで埋め、シーンスケッチ画像を `work/` に置きます。
+5. `/plan-from-idea` で `work/idea.md` とシーンスケッチから必要最低限の実装計画を作ります。
 6. `/web-coder` で `app/` 配下にWebアプリを実装します。
 7. VS Code内ブラウザで画面を確認し、`/web-design-reviewer` で見た目を改善します。
 8. `/webapp-testing` で主要フローを確認します。
@@ -62,13 +62,15 @@ docs/
   05-share-results.md
 work/
   idea.md
+  scene-1.jpg
+  scene-2.jpg
 ```
 
 ## ハンズオンで使うPrompt、Skills、Agent
 
 ideaから実装計画へ変換する部分は、このハンズオン固有の作業なので独自Promptを用意しています。
 
-- `/plan-from-idea` — `work/idea.md` とUIスケッチを、小さな実装計画に変換
+- `/plan-from-idea` — `work/idea.md` とシーンスケッチを、小さな実装計画に変換
 
 実装以降は、`github/awesome-copilot` から今回のハンズオンに合うSkillsを選び、短い日本語版として `.github/skills/` に置いています。
 
