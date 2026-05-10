@@ -8,6 +8,7 @@
       "onAutoForward": "openPreview"
     }
   },
+  "postCreateCommand": "bash .devcontainer/setup-copilot-cli.sh",
   "customizations": {
     "vscode": {
       "extensions": [
