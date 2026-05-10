@@ -2,13 +2,17 @@
 
 このリポジトリは、LINEミニアプリを題材に **GitHub Copilot ChatでWebアプリをゼロから実装する** ハンズオン用のハーネスです。
 
-アプリ本体の雛形は含めません。参加者はチームでアイデアとシーンスケッチをまとめ、`work/idea.md` と画像をGitHub Copilotに渡し、VS CodeのCopilot Chatで `app/` 配下にWebアプリを生成します。
+アプリ本体の雛形は含めません。参加者はチームでアイデアをまとめ、`work/idea.md` とUIスケッチ画像をGitHub Copilotに渡し、必要に応じてシーン画像も追加コンテキストとして使います。VS CodeのCopilot Chatで `app/` 配下にWebアプリを生成します。
+
+## はじめ方
+
+最初に [00. 事前準備と環境確認](docs/00-setup.md) を開いてください。Fork、Codespaces、VS Codeの入口は00章にまとめています。
 
 ## このハンズオンでやること
 
 参加者が最初からコードを書くのではなく、チームで作ったアイデアをGitHub Copilotが実装しやすい形に整えます。
 
-`work/idea.md` とシーンスケッチ画像を **アイデア引き継ぎパッケージ** として作り、Awesome Copilot由来のフロントエンド向けSkillsでアプリ生成と改善を進めます。
+`work/idea.md` とUIスケッチ画像を **アイデア引き継ぎパッケージ** として作ります。シーン画像がある場合は、アイデアの背景や利用場面を伝える追加コンテキストとして使います。
 
 ## 当日のゴール
 
@@ -21,23 +25,21 @@
 | タイミング | 内容 | 主な成果物 |
 |---|---|---|
 | 冒頭 | 環境確認 | Codespaces / VS Code / Copilot / Node.js |
-| パネル前30分 | チームでアイデア出し | シーンスケッチ, `work/idea.md` |
+| パネル前30分 | チームでアイデア出し | `work/idea.md`, UIスケッチ, シーン画像 |
 | パネル中 | Copilot Chatに実装を任せる | `app/` |
 | ハンズオン本編 | ブラウザ確認・改善 | 修正済みアプリ |
 | 最後 | 成果共有 | チーム発表 |
 
-## 使い方
+## 手順
 
-1. このリポジトリをForkします。
-2. GitHub Codespacesを作成します。ローカルVS Codeでも実施できます。
-3. [docs/00-setup.md](docs/00-setup.md) に沿って環境を確認します。
-4. シーンスケッチ画像を `work/` に置きます。
-5. `idea-capture-coach` Agentで、選んだアイデアとシーンを [work/idea.md](work/idea.md) に整理します。
-6. `/plan-from-idea` で `work/idea.md` とシーンスケッチから必要最低限の実装計画を作ります。
-7. `/web-coder` で `app/` 配下にWebアプリを実装します。
-8. VS Code内ブラウザで画面を確認し、`/web-design-reviewer` で見た目を改善します。
-9. `/webapp-testing` で主要フローを確認します。
-10. 最後に `demo-coach` Agentで、LINEミニアプリとしてデモできるかを確認します。
+詳しい操作は `docs/` の各章にまとめています。
+
+1. [00. 事前準備と環境確認](docs/00-setup.md)
+2. [01. チームでアイデアを作る](docs/01-ideation.md)
+3. [02. Copilotで実装計画に変換する](docs/02-plan-with-copilot.md)
+4. [03. Copilotでゼロから実装する](docs/03-build-with-agent.md)
+5. [04. ブラウザで確認して改善する](docs/04-browser-check.md)
+6. [05. 成果共有と発展課題](docs/05-share-results.md)
 
 ## リポジトリ構成
 
@@ -63,19 +65,20 @@ docs/
   05-share-results.md
 work/
   idea.md
-  scene-1.jpg
-  scene-2.jpg
+  ui-sketch.png
+  scene-1.jpg  # 任意
+  scene-2.jpg  # 任意
 ```
 
 ## ハンズオンで使うPrompt、Skills、Agent
 
-付箋やシーンスケッチを `work/idea.md` に落とす部分は、対話しながら進めやすいようにcustom agentを用意しています。
+付箋、UIスケッチ、シーン画像を `work/idea.md` に落とす部分は、対話しながら進めやすいようにcustom agentを用意しています。
 
-- `idea-capture-coach` — 選んだアイデア、シーンスケッチ、任意のストーリーを聞き取り、`work/idea.md` を整理
+- `idea-capture-coach` — 選んだアイデア、UIスケッチ、シーン画像、任意のストーリーを聞き取り、`work/idea.md` を整理
 
 ideaから実装計画へ変換する部分は、このハンズオン固有の作業なので独自Promptを用意しています。
 
-- `/plan-from-idea` — `work/idea.md` とシーンスケッチを、小さな実装計画に変換
+- `/plan-from-idea` — `work/idea.md` とUIスケッチ、必要に応じてシーン画像を、小さな実装計画に変換
 
 実装以降は、`github/awesome-copilot` から今回のハンズオンに合うSkillsを選び、短い日本語版として `.github/skills/` に置いています。
 
