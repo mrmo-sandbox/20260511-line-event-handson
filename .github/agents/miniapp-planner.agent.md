@@ -3,11 +3,11 @@ name: miniapp-planner
 description: "Use when: planning a small LINE mini app from work/idea.md, UI sketches, optional scene images, or workshop notes before coding."
 tools: [read, edit, search]
 handoffs:
-  - label: Start Implementation
+  - label: 実装を開始する
     agent: agent
     prompt: "work/plan.md を読んで、/web-coder を使って app/ 配下に実装してください。"
     send: true
-  - label: Open in Editor
+  - label: plan.mdを修正する
     agent: agent
     prompt: "#createFile the plan as is into an untitled file (`untitled:plan-${camelCaseName}.prompt.md` without frontmatter) for further refinement."
     send: true
