@@ -3,6 +3,7 @@
 - 生成アプリは `app/` 配下に作る。リポジトリルートへアプリのソースを置かない。
 - 既存の `app/` は確認してから変更し、明示なしに削除・作り直ししない。
 - 基本構成は Vite + React + TypeScript、クライアントサイドのみ、LIFFモック優先。
+- フロントエンド実装・確認は `web-coder`, `web-design-reviewer`, `webapp-testing` Skillsを優先する。
 - `work/idea.md` とUIスケッチを材料に、1〜3画面の小さな主要フローへ絞る。
 - LIFF ID、チャネルID、APIキー、トークン、シークレットを直書きしない。
 - `docs/` と `work/` は、明示された場合だけ大きく変更する。

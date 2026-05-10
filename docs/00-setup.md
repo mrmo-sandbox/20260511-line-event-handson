@@ -22,7 +22,7 @@
 
 1. CodespacesまたはローカルVS Codeでリポジトリのルートフォルダを開きます。
 2. GitHub Copilotにサインインしていることを確認します。
-3. Copilot Chatでこのリポジトリのプロンプトを実行できることを確認します。
+3. Copilot ChatでこのリポジトリのSkillsを実行できることを確認します。
 4. VS Code内ブラウザとPortsパネルを使えることを確認します。
 
 ## Node.js確認

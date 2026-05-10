@@ -4,10 +4,13 @@
 
 ## 手順
 
-1. 直前の計画を参照できる状態で、次のプロンプトを実行します。
+1. 直前の計画を参照できる状態で、Awesome由来の実装Skillを使います。
 
 ```text
-/implement-from-plan
+/web-coder
+
+work/idea.md とUIスケッチ、直前の計画に沿って、app/ 配下に必要最低限のWebアプリを実装してください。
+Vite + React + TypeScript、LIFF Mock、モバイルファーストでお願いします。
 ```
 
 2. Copilotがコマンド実行やファイル作成の確認を求めたら、内容を確認して進めます。
