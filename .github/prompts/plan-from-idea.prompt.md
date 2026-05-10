@@ -1,11 +1,11 @@
 ---
-description: "Use when: turning work/idea.md and scene sketches into a small implementation plan before coding."
+description: "Use when: turning work/idea.md, UI sketches, and optional scene sketches into a small implementation plan before coding."
 argument-hint: "追加したい条件"
 ---
 
 # ideaから実装計画を作る
 
-`work/idea.md` と `work/` 配下のシーンスケッチやUIスケッチ、またはChatに添付された画像を見て、実装しやすい小さな計画に変換してください。
+`work/idea.md` と `work/` 配下のUIスケッチ、必要に応じてシーンスケッチやChatに添付された画像を見て、実装しやすい小さな計画に変換してください。
 
 この段階では実装しないでください。計画だけを作ります。
 
@@ -13,7 +13,8 @@ argument-hint: "追加したい条件"
 
 - 1〜3画面の主要フローに絞る
 - `app/` 配下に Vite + React + TypeScript で作る前提にする
-- シーンスケッチは、利用場面の深さを理解する材料として扱う
+- UIスケッチは、画面構成と主要操作を考える主材料として扱う
+- シーンスケッチは、利用場面の深さを理解する追加コンテキストとして扱う
 - シーン数は固定しない。少ない場合は補い、多い場合は主要フローに効くものを選ぶ
 - まず通常のWebアプリとして主要フローを成立させる
 - その後にMockプロフィール、結果カード、共有文言でLINEミニアプリらしさを足す
@@ -27,8 +28,8 @@ argument-hint: "追加したい条件"
 次の順番で、短く具体的に書いてください。
 
 1. 作るアプリの一言説明
-2. 対象ユーザーと採用する主要シーン（画像ファイル名があれば含める）
-3. 画面構成
+2. 対象ユーザーと採用する主要シーン（シーン画像があれば含める）
+3. 画面構成（UIスケッチ画像があれば含める）
 4. ユーザーの流れ
 5. 最小実装に含める機能
 6. LIFF Mockを置く薄い境界

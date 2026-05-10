@@ -2,7 +2,7 @@
 
 このリポジトリは、LINEミニアプリを題材に **GitHub Copilot ChatでWebアプリをゼロから実装する** ハンズオン用のハーネスです。
 
-アプリ本体の雛形は含めません。参加者はチームでアイデアとシーンスケッチをまとめ、`work/idea.md` と画像をGitHub Copilotに渡し、VS CodeのCopilot Chatで `app/` 配下にWebアプリを生成します。
+アプリ本体の雛形は含めません。参加者はチームでアイデアをまとめ、`work/idea.md` とUIスケッチ画像をGitHub Copilotに渡し、必要に応じてシーン画像も追加コンテキストとして使います。VS CodeのCopilot Chatで `app/` 配下にWebアプリを生成します。
 
 ## はじめ方
 
@@ -12,7 +12,7 @@
 
 参加者が最初からコードを書くのではなく、チームで作ったアイデアをGitHub Copilotが実装しやすい形に整えます。
 
-`work/idea.md` とシーンスケッチ画像を **アイデア引き継ぎパッケージ** として作り、Awesome Copilot由来のフロントエンド向けSkillsでアプリ生成と改善を進めます。
+`work/idea.md` とUIスケッチ画像を **アイデア引き継ぎパッケージ** として作ります。シーン画像がある場合は、アイデアの背景や利用場面を伝える追加コンテキストとして使います。
 
 ## 当日のゴール
 
@@ -25,7 +25,7 @@
 | タイミング | 内容 | 主な成果物 |
 |---|---|---|
 | 冒頭 | 環境確認 | Codespaces / VS Code / Copilot / Node.js |
-| パネル前30分 | チームでアイデア出し | シーンスケッチ, `work/idea.md` |
+| パネル前30分 | チームでアイデア出し | `work/idea.md`, UIスケッチ, シーン画像 |
 | パネル中 | Copilot Chatに実装を任せる | `app/` |
 | ハンズオン本編 | ブラウザ確認・改善 | 修正済みアプリ |
 | 最後 | 成果共有 | チーム発表 |
@@ -65,19 +65,20 @@ docs/
   05-share-results.md
 work/
   idea.md
-  scene-1.jpg
-  scene-2.jpg
+  ui-sketch.png
+  scene-1.jpg  # 任意
+  scene-2.jpg  # 任意
 ```
 
 ## ハンズオンで使うPrompt、Skills、Agent
 
-付箋やシーンスケッチを `work/idea.md` に落とす部分は、対話しながら進めやすいようにcustom agentを用意しています。
+付箋、UIスケッチ、シーン画像を `work/idea.md` に落とす部分は、対話しながら進めやすいようにcustom agentを用意しています。
 
-- `idea-capture-coach` — 選んだアイデア、シーンスケッチ、任意のストーリーを聞き取り、`work/idea.md` を整理
+- `idea-capture-coach` — 選んだアイデア、UIスケッチ、シーン画像、任意のストーリーを聞き取り、`work/idea.md` を整理
 
 ideaから実装計画へ変換する部分は、このハンズオン固有の作業なので独自Promptを用意しています。
 
-- `/plan-from-idea` — `work/idea.md` とシーンスケッチを、小さな実装計画に変換
+- `/plan-from-idea` — `work/idea.md` とUIスケッチ、必要に応じてシーン画像を、小さな実装計画に変換
 
 実装以降は、`github/awesome-copilot` から今回のハンズオンに合うSkillsを選び、短い日本語版として `.github/skills/` に置いています。
 
