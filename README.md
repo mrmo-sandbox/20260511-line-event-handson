@@ -72,6 +72,19 @@ work/
   scene-2.jpg  # 任意
 ```
 
+### Copilotカスタマイズの使い分け
+
+このリポジトリでは、Copilotのカスタマイズを用途と適用範囲で分けています。
+
+| ファイル / ディレクトリ | いつ使われるか | スコープ | このハンズオンでの役割 |
+|---|---|---|---|
+| `.github/copilot-instructions.md` | このリポジトリでCopilot Chat / Agentを使うときに共通で参照される | リポジトリ全体 | `app/` 配下に作る、Vite + React + TypeScript、LIFFモック優先などの基本ルール |
+| `.github/instructions/*.instructions.md` | `applyTo` に一致するファイルを編集するときに追加で参照される | ファイルパターン単位 | 生成Webアプリ配下（`app/**/*`）だけに効く実装ルール |
+| `.github/agents/*.agent.md` | VS Code Copilot Chatでcustom agentを選ぶ、またはhandoffで渡すときに使われる | そのagentを使った会話 | アイデア聞き取り、計画化、デモ確認など、工程ごとに会話の進め方を固定する |
+| `.github/skills/*/SKILL.md` | `/web-coder` などのSkillを明示的に呼ぶ、またはAgentが必要に応じて使う | 呼び出したタスク単位 | 実装、デザインレビュー、ブラウザ確認など、作業別の専門手順を渡す |
+| `.vscode/mcp.json` | VS Code内のCopilot AgentがMCPツールを使うときに参照される | VS Codeワークスペース | VS Code内ブラウザ確認やPlaywright MCPなどの接続設定 |
+| `.github/copilot-cli-mcp.json` | Codespaces起動時にCopilot CLI向けMCP設定として配置される | Copilot CLI環境 | CLIから同じMCP設定を使えるようにする元設定 |
+
 ## ハンズオンで使うAgentとSkills
 
 付箋、UIスケッチ、シーン画像を `work/idea.md` に落とす部分は、対話しながら進めやすいようにcustom agentを用意しています。
